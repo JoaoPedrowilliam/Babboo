@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contrato</title>
+</head>
+<body>
+    <form action="http://localhost:8080/api/v1/funcionario/contrato" method="post" enctype="application/x-www-form-urlencoded">
+
+        <!-- Campo contratoId não é preenchido manualmente, pois é gerado automaticamente -->
+
+        <label for="funcionarioId">Funcionário ID:</label>
+        <input type="text" id="funcionarioId" name="funcionarioId" required>
+
+        <label for="departamento">Departamento:</label>
+        <input type="text" id="departamento" name="departamento" required>
+
+        <label for="tipo">Tipo:</label>
+        <input type="text" id="tipo" name="tipo" required>
+
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo" name="cargo" required>
+
+        <label for="salarioBruto">Salário Bruto:</label>
+        <input type="text" id="salarioBruto" name="salarioBruto">
+
+        <label for="admissao">Data de Admissão:</label>
+        <input type="text" id="admissao" name="admissao"><!-- Adapte o tipo de entrada para data se preferir -->
+
+        <!-- Campos adicionais (comentados no código Java) podem ser adicionados conforme necessário -->
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

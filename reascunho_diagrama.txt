@@ -1,0 +1,81 @@
+#- Tela principal
+PERFIL (VIEW)
+	- Nome   (String)
+	- linkedIn
+	- Genero 
+	- email 
+	- Cargo 
+	- Gestor 
+	- Foto 
+	- Departamento 
+	- CPF 
+ 	- Admissao 
+
+	- Beneficios 
+		- Vale Refeição - Valor
+		- Vale Alimentação - Valor
+		- Saude - valor
+		- Odonto
+		- Academia
+ 		- Vale Transporte
+	-Notificação
+
+
+
+# - Funcionário 
+CadastroFuncionario (Table)
+    Funcionário
+        Email
+        Nome
+        CPF
+        Celular
+        CEP
+        Rua
+        Escolaridade
+        Certidão de Nascimento
+        CNH
+        Genero
+        Dependentes
+
+    Beneficios
+        Vale Transporte
+        Vale Alimentação
+        Auxilio home office
+
+	
+	Departamento
+	    Gestor
+	    Cargo
+	
+	
+	
+    Contrato
+        Salário
+    	Tipo de  Contrato
+	    Jornada de trabalho
+	    CTPS (Carteira de trabalho)
+        Data Admissão
+
+    Folha
+        Descontos
+        HoraExtra
+        Beneficios(Fk)
+        Salario_bruto(Fk)
+        salario_liqd
+
+
+
+# - Folha de Pagamento 
+ # Usuario
+	- Visualiza a folha e volta
+	- Visualiza informe de rendimento
+	-
+
+ # RH	(VIEW)
+	- Calcula a folha
+		- Salario Bruto
+		- Auxilio Home Office
+		- Hora extra
+		- convenio médico
+	- COnvenio odonto
+	
